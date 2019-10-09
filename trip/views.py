@@ -3,7 +3,7 @@ from .models import destination
 # Create your views here.
 def triphome(request):
 
-    dest1=destination()
+    '''dest1=destination()
     dest1.price=800
     dest1.name='Pune'
     dest1.desc='peshve city never lose'
@@ -19,6 +19,8 @@ def triphome(request):
     dest3.price=700
     dest3.name='delhi'
     dest3.desc='polluted'
-    dest3.img='destination_3.jpg'
-    dest=[dest1,dest2,dest3]
+    dest3.img='destination_3.jpg
+    dest=[dest1,dest2,dest3]'''
+
+    dest=destination.objects.all()
     return render(request,'index.html',{'Dest':dest})
