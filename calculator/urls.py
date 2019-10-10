@@ -23,5 +23,6 @@ urlpatterns = [
     path('',include('calc.urls')),
     path('home/',include('calc.urls')),
     path('result/',include('calc.urls')),
-    path('triphome/',include('trip.urls'))
+    path('triphome/',include('trip.urls')),
+    path('triphome/accounts/',include('accounts.urls')),
 ]+ static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
